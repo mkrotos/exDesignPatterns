@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MoneyTest {
     Money money;
+    double delta=0.0001;
 
     @BeforeEach
      public void before(){
@@ -19,4 +20,28 @@ class MoneyTest {
         assertEquals("EUR 2.34",money.toString());
     }
 
+
+    @Test
+    public void getCurrency() {
+        assertEquals(Currency.EUR,money.getCurrency());
+    }
+
+    @Test
+    public void getValue() {
+        assertEquals(2.344,money.getValue(),delta);
+    }
+    @Test
+    public void equals(){
+        Money money2=new Money(Currency.EUR,2.344f);
+        Money money3=new Money(Currency.USD,4.55f);
+
+        assertTrue(money.equals(money2));
+        assertFalse(money.equals(money3));
+    }
+    @Test
+    public void parse(){
+        Money newMoney=Money.parse("PLN 23.098");
+        assertEquals("PLN 23.10",newMoney.toString());
+        assertEquals(23.098,newMoney.getValue(),delta);
+    }
 }
