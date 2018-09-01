@@ -1,14 +1,13 @@
-package com.krotos;
+package com.krotos.exercises;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class MoneyTest {
-    Money money;
-    double delta=0.0001;
+    private Money money;
+    private double delta=0.0001;
 
     @BeforeEach
      public void before(){

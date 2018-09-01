@@ -1,4 +1,4 @@
-package com.krotos;
+package com.krotos.exercises;
 
 public enum Currency {
     PLN (0.2696f),

@@ -1,6 +1,4 @@
-package com.krotos;
-
-import java.util.Objects;
+package com.krotos.exercises;
 
 public class Money {
 
@@ -47,6 +45,7 @@ public class Money {
 
         return new Money(newCurrency,valueInNewCurrency);
     }
+
 
 
 }
