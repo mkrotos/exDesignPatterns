@@ -1,7 +1,17 @@
 package com.krotos;
 
 public enum Currency {
-    PLN,
-    EUR,
-    USD;
+    PLN (0.2696f),
+    EUR(1.1621f),
+    USD(1f);
+
+    private float USDValue;
+
+    Currency(float USDValue) {
+        this.USDValue = USDValue;
+    }
+
+    public float getUSDValue() {
+        return USDValue;
+    }
 }

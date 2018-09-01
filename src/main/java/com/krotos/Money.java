@@ -41,6 +41,12 @@ public class Money {
         return Float.compare(money.value, value) == 0 &&
                 currency == money.currency;
     }
+    public Money convert(Currency newCurrency){
+        float valueInUSD=value*currency.getUSDValue();
+        float valueInNewCurrency=valueInUSD/newCurrency.getUSDValue();
+
+        return new Money(newCurrency,valueInNewCurrency);
+    }
 
 
 }

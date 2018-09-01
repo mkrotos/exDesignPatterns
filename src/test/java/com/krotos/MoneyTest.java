@@ -44,4 +44,10 @@ class MoneyTest {
         assertEquals("PLN 23.10",newMoney.toString());
         assertEquals(23.098,newMoney.getValue(),delta);
     }
+    @Test
+    public void convert(){
+        Money newMoney=money.convert(Currency.PLN);
+        assertEquals(Currency.PLN,newMoney.getCurrency());
+        assertEquals(10.1037,newMoney.getValue(),delta);
+    }
 }
