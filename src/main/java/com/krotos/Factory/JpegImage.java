@@ -1,7 +1,7 @@
 package com.krotos.Factory;
 
 public class JpegImage implements Image {
-    private String image;
+    private final String image;
 
     public JpegImage(String image) {
         this.image = image;
@@ -9,6 +9,6 @@ public class JpegImage implements Image {
 
     @Override
     public String getImage() {
-        return null;
+        return image;
     }
 }
