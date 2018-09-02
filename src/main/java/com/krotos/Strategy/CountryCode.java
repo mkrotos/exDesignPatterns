@@ -1,6 +1,6 @@
 package com.krotos.Strategy;
 
-public enum countryCode {
+public enum CountryCode {
     USA,
     PL;
 }
