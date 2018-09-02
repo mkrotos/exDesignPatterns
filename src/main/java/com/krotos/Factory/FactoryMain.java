@@ -2,14 +2,14 @@ package com.krotos.Factory;
 
 public class FactoryMain {
     public static void main(String[] args) {
-        ImageReader gifImageReader=new GifImageReader();
-        Image gifImage=gifImageReader.createImage("asdfvg");
+        ImageReader imageReader=new GifImageReader();
+        Image gifImage=imageReader.createImage("asdfvg");
         System.out.println(gifImage.getImage());
-        gifImageReader.save(gifImage);
+        imageReader.save(gifImage);
 
-        ImageReader jpegImageReader=new JpegImageReader();
-        Image jpegImage=jpegImageReader.createImage("jkjkasd");
+        ImageReader imageReader2=new JpegImageReader();
+        Image jpegImage=imageReader2.createImage("jkjkasd");
         System.out.println(jpegImage.getImage());
-        jpegImageReader.save(jpegImage);
+        imageReader2.save(jpegImage);
     }
 }
