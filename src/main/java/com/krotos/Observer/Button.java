@@ -6,10 +6,12 @@ public class Button {
     public void setListener(OnClickListener listener) {
         this.listener = listener;
     }
-    public void removeListener(){
-        listener=null;
+
+    public void removeListener() {
+        listener = null;
     }
-    public void click(){
+
+    public void click() {
         listener.onClick();
     }
 }

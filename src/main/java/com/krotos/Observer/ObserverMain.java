@@ -2,7 +2,7 @@ package com.krotos.Observer;
 
 public class ObserverMain {
     public static void main(String[] args) {
-        Button button=new Button();
+        Button button = new Button();
 
         button.setListener(new OnClickListener() {
             @Override
