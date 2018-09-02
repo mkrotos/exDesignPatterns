@@ -11,6 +11,8 @@ public class ObserverMain {
             }
         });
         button.click();
+        button.removeListener();
+        button.click();
 
     }
 }
