@@ -40,36 +40,43 @@ public class Car {
         private double engineCapacity;
         private String colour = "Black";
         private LocalDate productionDate;
-        private Integer vmax = 200;
+        private Integer vmax;
         private boolean hasBluetooth;
         private boolean hasGPS;
 
-        void withMark(String mark) {
+        Builder withMark(String mark) {
             this.mark = mark;
+            return this;
         }
 
-        void withEngineCapacity(double engineCapacity) {
+        Builder withEngineCapacity(double engineCapacity) {
             this.engineCapacity = engineCapacity;
+            return this;
         }
 
-        void withColour(String colour) {
+        Builder withColour(String colour) {
             this.colour = colour;
+            return this;
         }
 
-        void withProductionDate(LocalDate productionDate) {
+        Builder withProductionDate(LocalDate productionDate) {
             this.productionDate = productionDate;
+            return this;
         }
 
-        void withBluetooth() {
+        Builder withBluetooth() {
             hasBluetooth = true;
+            return this;
         }
 
-        void withVMax(Integer vMax) {
+        Builder withVMax(Integer vMax) {
             this.vmax = vMax;
+            return this;
         }
 
-        void withGPS() {
+        Builder withGPS() {
             hasGPS = true;
+            return this;
         }
 
         Car build() {
