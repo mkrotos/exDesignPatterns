@@ -2,13 +2,13 @@ package com.krotos.Adapter;
 
 public class DebitCard {
 
-    private Float moneys=1000f;
+    private Float moneys = 1000f;
 
-    boolean takeMoney(Float amount){
-        if(amount>moneys){
+    boolean takeMoney(Float amount) {
+        if (amount > moneys) {
             return false;
         }
-        moneys-=amount;
+        moneys -= amount;
         return true;
     }
 }

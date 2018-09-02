@@ -6,12 +6,12 @@ import java.io.UnsupportedEncodingException;
 
 public class GifImageReader implements ImageReader {
     @Override
-     public Image createImage(String content) {
+    public Image createImage(String content) {
         return new GifImage(content);
     }
 
     @Override
-     public void save(Image image) {
+    public void save(Image image) {
 
         try {
             PrintWriter printWriter = new PrintWriter("image.gif", "UTF-8");

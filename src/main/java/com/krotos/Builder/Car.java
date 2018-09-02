@@ -24,7 +24,8 @@ public class Car {
                 '}';
     }
 
-    public Car(String mark, double engineCapacity, String colour, LocalDate productionDate, Integer vmax, boolean hasBluetooth, boolean hasGPS) {
+    public Car(String mark, double engineCapacity, String colour, LocalDate productionDate,
+               Integer vmax, boolean hasBluetooth, boolean hasGPS) {
         this.mark = mark;
         this.engineCapacity = engineCapacity;
         this.colour = colour;
